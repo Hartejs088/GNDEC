@@ -15,6 +15,7 @@ padding: 0;
 .navbar .nav-link {
   color: #ffffff; 
   transition: color 0.4s ease-in-out;
+  
 }
 
 .navbar .nav-link:hover,
@@ -35,23 +36,6 @@ padding: 0;
   .navbar .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-  }
-}
-@media (max-width: 768px) {
-  .wlcm {
-    font-size: 2.2rem;
-  }
-  .herotxt {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .wlcm {
-    font-size: 1.8rem;
-  }
-  .herotxt {
-    font-size: 1rem;
   }
 }
 
@@ -85,6 +69,7 @@ margin-right: 20px;
 }
  .navbar-custom {
       transition: all 0.3s ease;
+      
     }
 
     .navbar-transparent {
@@ -100,32 +85,91 @@ margin-right: 20px;
     .navbar-scrolled .nav-link,
     .navbar-scrolled .navbar-brand {
       color: #ffffff ;
-      font-size: 22px;
+      font-size: 1.2rem;
 
     }
 
-    .navbar-transparent .nav-link,
-    .navbar-transparent .navbar-brand {
-      color: #ffffff ;
-     
-      font-size: 22px;
-    }
-    .hero-section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 150px; 
-      color: #ffffff;
-   
-    }
-    .wlcm{
-   font-size: 80px;
-   margin-top: 40px;
-margin-bottom: 60px;
+.navbar-transparent .nav-link,
+.navbar-transparent .navbar-brand {
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.4s ease;
+}
 
-    }
+.navbar-transparent .nav-link:hover,
+.navbar-transparent .navbar-brand:hover {
+  color: #ffd500;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+  color: #ffffff;
+}
+
+.wlcm {
+  font-size: 4vw; 
+  margin-top: 40px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.herotxt{
+font-size: 2vw;
+font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+margin-top: 20px;
+color: #ffffffda;
+}
+
+@media (min-width: 1200px) {
+  .wlcm {
+    font-size: 3rem;
+  }
+ .navbar-transparent .nav-link,
+.navbar-transparent .navbar-brand {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.4s ease;
+}
+.herotxt{
+font-size: 1.5rem;}
+ 
+}
+
+@media (max-width: 480px) {
+  .wlcm {
+    font-size:1.8rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+ 
+  #heroicon{
+  width: 8%;
+margin-left: 20px;
+margin-right: 20px;
+  }
+  .herotxt{
+
+    font-size: 0.8rem;
+  }
+   .navbar-transparent .nav-link,
+.navbar-transparent .navbar-brand {
+  color: #ffffff;
+  font-size: 0.8rem;
+  
+}
+}
+
+    
     .faded-background {
   position: relative;
   background: url('data/campus2.jpg') center/cover no-repeat;
@@ -179,15 +223,7 @@ margin-bottom: 60px;
   backdrop-filter: blur(4px);
   z-index: 1;
 }
-.herotxt{
-font-size: 24px;
-font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-margin-top: 20px;
-color: #ffffffda;
-}
+
        @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -202,7 +238,7 @@ color: #ffffffda;
 
 .video-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   margin-bottom: 30px;
 }
 
@@ -215,7 +251,7 @@ video {
 .text-container {
   max-width: 1100px;
   text-align: center;
-  padding: 0 20px;
+ 
 }
 
 .section-title {
@@ -223,15 +259,14 @@ video {
   font-weight: bold;
   margin-bottom: 20px;
   color: #1e3760b1;
-  font-family: Georgia, serif;
+  
 }
 
 .text-container p {
-  font-size: 1.6em; 
+  font-size: 1.4rem; 
   line-height: 1.2;
   color: #2d2d2dcd;
-  font-family: 'Times New Roman', serif;
-  font-weight: 400;
+  
 }
 .about-section {
   background-color: #ffffff;
@@ -240,13 +275,13 @@ video {
 .about-heading {
   font-size: 2.9rem;
   font-weight: 800;
-  color: #003366e9;
+  color: rgb(51, 51, 51);
 }
 
 .about-text {
   font-size: 1.4rem;
   line-height: 1.2;
-  color: #333;
+  color: #333333 ;
 }
 
 .know-more-btn {
@@ -266,7 +301,7 @@ video {
 
 @media (max-width: 768px) {
   .about-heading {
-    font-size: 2.2rem;
+    font-size: 1.5crem;
   }
 
   .about-text {
@@ -276,6 +311,18 @@ video {
   .know-more-btn {
     width: 100%;
   }
+.section-title {
+  font-size: 2rem;
+  
+}
+
+.text-container p {
+  font-size: 1rem; 
+  
+  
+}
+
+
 }.carousel-inner img {
   height: 380px;             
   width: 100%;
@@ -393,7 +440,6 @@ video {
   color: #444;
 }
 
-/* Highlights Section */
 .highlight-title {
   font-weight: 600;
   color: #003366;
@@ -401,10 +447,9 @@ video {
   font-size: 1.2rem;
 }
 
-/* Button */
 .apply-btn {
   background-color: #003366;
-  color: #fff;
+  color: #e0e0e0;
   font-weight: 600;
   padding: 12px 28px;
   font-size: 1.1rem;
@@ -415,6 +460,7 @@ video {
 
 .apply-btn:hover {
   background-color: #001f4d;
+  color: #ffffff;
 }
 
 @media (max-width: 991.98px) {
@@ -470,16 +516,6 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .footerimg{
 border-radius: 50%;
 
@@ -502,7 +538,6 @@ border-radius: 50%;
   margin: auto;
 }
 
-/* Cards */
 .placement-card {
   background: white;
   border-radius: 12px;
@@ -526,14 +561,45 @@ border-radius: 50%;
   color: #003366;
 }
 
+.recruiter-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
 .recruiter-logo {
   max-width: 350px;
+  width: 100%;
   max-height: 90px;
-  object-fit: cover;
+  object-fit: contain;
   filter: grayscale(20%);
   transition: filter 0.3s;
 }
 
+.recruiter-logo:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .recruiter-logo {
+    max-width: 200px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recruiter-logos-container {
+    flex-direction: column;
+  }
+
+  .recruiter-logo {
+    max-width: 90%;
+    max-height: 60px;
+  }
+}
 
 .brochure-btn {
   background-color: #003366;
@@ -774,3 +840,7 @@ border-radius: 50%;
   }
 }
 
+.text-wh{
+color: #979797;
+
+}
