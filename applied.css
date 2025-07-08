@@ -1,0 +1,82 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#svgim{
+width: 4%;
+}
+
+.navbar-nav {
+  margin-right: auto;
+} 
+#hero-section {
+  height: 100vh;
+  background-image: url('data/1489641871php5ZZD7g.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent ;
+  z-index: 1000;
+}
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+#hero-section {
+  height: 100vh;
+  background-image: url('data/1489641871php5ZZD7g.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color: #000 !important;
+}
+
+.about-title-section {
+ 
+  padding: 2rem;
+
+}
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.dept-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dept-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.footerpage{
+background-color: black;
+height: 200px;
+
+}
