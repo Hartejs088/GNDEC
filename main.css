@@ -322,12 +322,17 @@ video {
   
 }
 
-
-}.carousel-inner img {
-  height: 380px;             
+.carousel-inner img {
   width: 100%;
-  object-fit: cover;         
+  height: 380px;
+  object-fit: cover;
   border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 200px;
+  }
 }
 
 .academics-section {
